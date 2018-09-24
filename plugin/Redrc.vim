@@ -27,6 +27,8 @@ au BufNewFile,BufRead *.html set filetype=htmldjango
 if has('gui_running')
     colorscheme tomorrownightbright
     set guioptions-=T
+    set guioptions-=r
+    set guioptions-=L
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
     vmap <C-c> "+yi
     vmap <C-x> "+c
