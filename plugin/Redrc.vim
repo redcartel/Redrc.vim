@@ -28,4 +28,8 @@ if has('gui_running')
     colorscheme harlequin
     set guioptions -=T
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
+    vmap <C-c> "+yi
+    vmap <C-x> "+c
+    vmap <C-v> c<ESC>"+p
+    imap <C-v> <ESC>"+pa
 endif
