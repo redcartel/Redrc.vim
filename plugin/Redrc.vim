@@ -23,3 +23,7 @@ autocmd InsertEnter * set cursorline
 autocmd InsertLeave * set nocursorline
 
 au BufNewFile,BufRead *.html set filetype=htmldjango
+
+if has('gui_running')
+    colorscheme codedark
+endif
