@@ -1,4 +1,4 @@
- ini set nocompatible
+set nocompatible
 filetype plugin indent on    " required
 
 set statusline+=%F
