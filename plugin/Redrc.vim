@@ -1,4 +1,4 @@
-set nocompatible
+ ini set nocompatible
 filetype plugin indent on    " required
 
 set statusline+=%F
@@ -25,8 +25,8 @@ autocmd InsertLeave * set nocursorline
 au BufNewFile,BufRead *.html set filetype=htmldjango
 
 if has('gui_running')
-    colorscheme harlequin
-    set guioptions -=T
+    colorscheme tomorrownightbright
+    set guioptions-=T
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
     vmap <C-c> "+yi
     vmap <C-x> "+c
