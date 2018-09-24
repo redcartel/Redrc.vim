@@ -26,4 +26,6 @@ au BufNewFile,BufRead *.html set filetype=htmldjango
 
 if has('gui_running')
     colorscheme codedark
+    set guioptions -=T
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 endif
