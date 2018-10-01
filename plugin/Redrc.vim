@@ -25,11 +25,15 @@ autocmd InsertLeave * set nocursorline
 au BufNewFile,BufRead *.html set filetype=htmldjango
 
 if has('gui_running')
-    colorscheme tomorrownightbright
     set guioptions-=T
     set guioptions-=r
     set guioptions-=L
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
+    let g:gruvbox_contrast_dark='hard'
+    set background=dark
+    colorscheme gruvbox 
+    " autocmd ColorScheme * highlight Normal guifg=white guibg=black 
+    " | highlight MatchParen cterm=bold ctermfg=red ctermbg=NONE gui=bold guifg=white guibg=NONE
     vmap <C-c> "+yi
     vmap <C-x> "+c
     vmap <C-v> c<ESC>"+p
