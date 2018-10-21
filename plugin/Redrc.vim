@@ -39,3 +39,10 @@ if has('gui_running')
     vmap <C-v> c<ESC>"+p
     imap <C-v> <ESC>"+pa
 endif
+
+if has('nvim')
+    vmap <C-c> "+yi
+    vmap <C-x> "+c
+    vmap <C-v> c<ESC>"+p
+    imap <C-v> <ESC>"+pa
+endif
