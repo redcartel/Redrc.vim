@@ -29,9 +29,8 @@ if has('gui_running')
     set guioptions-=r
     set guioptions-=L
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
-    let g:gruvbox_contrast_dark='hard'
+    colorscheme blue
     set background=dark
-    colorscheme gruvbox 
     " autocmd ColorScheme * highlight Normal guifg=white guibg=black 
     " | highlight MatchParen cterm=bold ctermfg=red ctermbg=NONE gui=bold guifg=white guibg=NONE
     vmap <C-c> "+yi
@@ -41,6 +40,7 @@ if has('gui_running')
 endif
 
 if has('nvim')
+    colorscheme gruvbox 
     vmap <C-c> "+yi
     vmap <C-x> "+c
     vmap <C-v> c<ESC>"+p
