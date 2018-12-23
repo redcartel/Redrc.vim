@@ -17,6 +17,7 @@ set undodir=~/.vim/undo
 
 au FileType javascript setl sw=2 sts=2 et
 au FileType python set colorcolumn=80
+au FileType markdown set colorcolumn=80
 
 set nocursorline
 autocmd InsertEnter * set cursorline
@@ -28,11 +29,11 @@ if has('gui_running')
     set guioptions-=T
     set guioptions-=r
     set guioptions-=L
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
-    colorscheme blue
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 24
+    colorscheme materialbox
     set background=dark
-    " autocmd ColorScheme * highlight Normal guifg=white guibg=black 
-    " | highlight MatchParen cterm=bold ctermfg=red ctermbg=NONE gui=bold guifg=white guibg=NONE
+    autocmd ColorScheme * highlight Normal guifg=white guibg=black 
+    highlight MatchParen cterm=bold ctermfg=red ctermbg=NONE gui=bold guifg=white guibg=NONE
     vmap <C-c> "+yi
     vmap <C-x> "+c
     vmap <C-v> c<ESC>"+p
