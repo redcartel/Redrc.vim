@@ -25,6 +25,19 @@ autocmd InsertLeave * set nocursorline
 
 au BufNewFile,BufRead *.html set filetype=htmldjango
 
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_w = 0
+let g:syntastic_mode_map = { "mode": "passive" }
+let g:syntastic_python_checkers = ['pylint']
+
 if has('gui_running')
     set guioptions-=T
     set guioptions-=r
@@ -41,9 +54,11 @@ if has('gui_running')
 endif
 
 if has('nvim')
-    colorscheme gruvbox 
     vmap <C-c> "+yi
     vmap <C-x> "+c
     vmap <C-v> c<ESC>"+p
     imap <C-v> <ESC>"+pa
+    set foldenable
+    set foldmethod=indent
+    nnoremap <C-a> zA
 endif
