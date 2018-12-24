@@ -41,6 +41,7 @@ if has('gui_running')
 endif
 
 if has('nvim')
+    set mouse=a
     vmap <C-c> "+yi
     vmap <C-x> "+c
     vmap <C-v> c<ESC>"+p
