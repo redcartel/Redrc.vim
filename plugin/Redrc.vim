@@ -16,6 +16,7 @@ set undofile
 set undodir=~/.vim/undo
 
 au FileType javascript setl sw=2 sts=2 et
+
 au FileType python set colorcolumn=80
 au FileType markdown set colorcolumn=80
 
