@@ -38,6 +38,8 @@ let g:syntastic_check_on_w = 0
 let g:syntastic_mode_map = { "mode": "passive" }
 let g:syntastic_python_checkers = ['pylint']
 
+noremap <C-/> :nohl<cr>:<backspace>
+
 if has('gui_running')
     set guioptions-=T
     set guioptions-=r
