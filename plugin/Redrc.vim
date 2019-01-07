@@ -57,6 +57,10 @@ nnoremap <Leader>M :set foldenable<CR>
 nnoremap <Leader>j 31j
 nnoremap <Leader>k 31k
 
+nmap <C-s> <CR>
+imap <C-s> <ESC>
+vmap <C-s> <ESC>
+
 if has('gui_running')
 
     set mouse=a
