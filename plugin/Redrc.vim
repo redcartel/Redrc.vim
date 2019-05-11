@@ -23,12 +23,14 @@ set colorcolumn=80
 " you know this dril
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
 set smartindent
 set autoindent
 
 " javascript gets 2 spaces for an indent
-au FileType javascript setl sw=2 sts=2 et
+au FileType javascript setlocal sw=2 sts=2 ts=2
+au FileType html setlocal ts=2 sts=2 sw=2
 
 
 " cursorline in insert mode only
