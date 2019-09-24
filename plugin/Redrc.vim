@@ -36,8 +36,8 @@ au FileType html setlocal ts=2 sts=2 sw=2
 " cursorline in insert mode only
 " TODO: bugged when switching between splits sometimes
 set nocursorline
-autocmd InsertEnter * set cursorline
-autocmd InsertLeave * set nocursorline
+autocmd InsertEnter * set nocursorline
+autocmd InsertLeave * set cursorline
 
 " ctrl-forward slash clears search highlighting
 noremap <C-/> :nohl<cr>
