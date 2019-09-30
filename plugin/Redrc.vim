@@ -43,6 +43,10 @@ map <C-Left> <C-W>h<cr>
 map <C-Down> <C-W>j<cr>
 map <C-Up> <C-W>k<cr>
 
+" resize window with Ctrl-shift- +/-
+map <C-+> :res +1<cr>
+map <C-_> :res -1<cr>
+
 " javascript gets 2 spaces for an indent
 au FileType javascript setlocal sw=2 sts=2 ts=2
 au FileType html setlocal ts=2 sts=2 sw=2
