@@ -29,16 +29,30 @@ set smartindent
 set autoindent
 set title
 
+" no macros or ex
+nnoremap Q <nop>
+map q <nop>
+
+" better block indenting
+vmap < <gv
+vmap > >gv
+
+" jump around windows with Ctrl-arrows
+map <C-Right> <C-W>l<C-W>
+map <C-Left> <C-W>h<C-W>
+map <C-Down> <C-W>j<C-W>
+map <C-Up> <C-W>k<C-W>
+
 " javascript gets 2 spaces for an indent
 au FileType javascript setlocal sw=2 sts=2 ts=2
 au FileType html setlocal ts=2 sts=2 sw=2
-
 
 " cursorline in normal mode (I like looking at it and
 " it encourages me to be in normal mode more)
 set nocursorline
 autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
+autocmd CursorMoved * set cursorline
 
 " ctrl-forward slash clears search highlighting
 noremap <C-/> :nohl<cr>
