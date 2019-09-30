@@ -38,10 +38,10 @@ vmap < <gv
 vmap > >gv
 
 " jump around windows with Ctrl-arrows
-map <C-Right> <C-W>l<C-W>
-map <C-Left> <C-W>h<C-W>
-map <C-Down> <C-W>j<C-W>
-map <C-Up> <C-W>k<C-W>
+map <C-Right> <C-W>l<cr>
+map <C-Left> <C-W>h<cr>
+map <C-Down> <C-W>j<cr>
+map <C-Up> <C-W>k<cr>
 
 " javascript gets 2 spaces for an indent
 au FileType javascript setlocal sw=2 sts=2 ts=2
