@@ -38,10 +38,10 @@ vmap < <gv
 vmap > >gv
 
 " jump around windows with Ctrl-arrows
-map <C-Right> <C-W>l<cr>
-map <C-Left> <C-W>h<cr>
-map <C-Down> <C-W>j<cr>
-map <C-Up> <C-W>k<cr>
+map <C-Right> <C-W>l
+map <C-Left> <C-W>h
+map <C-Down> <C-W>j
+map <C-Up> <C-W>k
 
 " resize window with Ctrl-shift- +/-
 map <C-=> :res +1<cr>
