@@ -27,7 +27,7 @@ set expandtab
 set smartindent
 set autoindent
 set title
-set history=65536
+set history=10000
 set mouse=a
 
 set wildmenu
